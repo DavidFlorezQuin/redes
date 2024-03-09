@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class UserService extends ABaseService<User> implements IUserService{
     @Override
     protected IBaseRepository<User, Long> getRepository() {
-        return null;
+        return repository;
     }
 
     @Autowired

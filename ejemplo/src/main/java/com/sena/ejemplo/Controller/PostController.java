@@ -12,14 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class PostController extends ABaseController<Post, IPostService> {
 
-
-    /**
-     * Constructor for ABaseController.
-     *
-     * @param service    The service for the entity.
-     * @param entityName The name of the entity.
-     */
-    protected PostController(IPostService service, String entityName) {
-        super(service, entityName);
+    public PostController(IPostService service) {
+        super(service, "Post");
     }
 }

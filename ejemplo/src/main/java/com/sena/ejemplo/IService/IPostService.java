@@ -6,6 +6,5 @@ import com.sena.ejemplo.Entity.Post;
 import java.util.List;
 
 public interface IPostService extends IBaseService<Post> {
-    List<IUserDto> getList();
 
 }

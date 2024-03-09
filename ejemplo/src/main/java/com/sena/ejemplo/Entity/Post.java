@@ -1,6 +1,11 @@
 package com.sena.ejemplo.Entity;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "post")
 
 public class Post extends ABaseEntity{
     @Column(name = "text", length = 50, nullable = false)
